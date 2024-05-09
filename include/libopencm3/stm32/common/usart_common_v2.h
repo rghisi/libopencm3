@@ -43,6 +43,9 @@
 #if defined(UART5_BASE)
 #define UART5_CR1			USART_CR1(UART5_BASE)
 #endif
+#if defined(LPUART1_BASE)
+#define LPUART1_CR1                     USART_CR1(LPUART1_BASE)
+#endif
 
 /** Control register 2 (USARTx_CR2) */
 #define USART_CR2(usart_base)		MMIO32((usart_base) + 0x04)
@@ -57,6 +60,9 @@
 #endif
 #if defined(UART5_BASE)
 #define UART5_CR2			USART_CR2(UART5_BASE)
+#endif
+#if defined(LPUART1_BASE)
+#define LPUART1_CR2                     USART_CR2(LPUART1_BASE)
 #endif
 
 /** Control register 3 (USARTx_CR3) */
@@ -73,6 +79,9 @@
 #if defined(UART5_BASE)
 #define UART5_CR3			USART_CR3(UART5_BASE)
 #endif
+#if defined(LPUART1_BASE)
+#define LPUART1_CR3                     USART_CR3(LPUART1_BASE)
+#endif
 
 /** Baud rate register (USARTx_BRR) */
 #define USART_BRR(usart_base)		MMIO32((usart_base) + 0x0C)
@@ -87,6 +96,9 @@
 #endif
 #if defined(UART5_BASE)
 #define UART5_BRR			USART_BRR(UART5_BASE)
+#endif
+#if defined(LPUART1_BASE)
+#define LPUART1_BRR                     USART_BRR(LPUART1_BASE)
 #endif
 
 /** Guard time and prescaler register (USARTx_GTPR) */
@@ -133,6 +145,9 @@
 #if defined(UART5_BASE)
 #define UART5_RQR			USART_RQR(UART5_BASE)
 #endif
+#if defined(LPUART1_BASE)
+#define LPUART1_RQR                     USART_RQR(LPUART1_BASE)
+#endif
 
 /** Interrupt & status register (USART_ISR) */
 #define USART_ISR(usart_base)		MMIO32((usart_base) + 0x1C)
@@ -147,6 +162,9 @@
 #endif
 #if defined(UART5_BASE)
 #define UART5_ISR			USART_ISR(UART5_BASE)
+#endif
+#if defined(LPUART1_BASE)
+#define LPUART1_ISR                     USART_ISR(LPUART1_BASE)
 #endif
 
 /** Interrupt flag clear register (USART_ICR) */
@@ -163,6 +181,9 @@
 #if defined(UART5_BASE)
 #define UART5_ICR			USART_ICR(UART5_BASE)
 #endif
+#if defined(LPUART1_BASE)
+#define LPUART1_ICR                     USART_ICR(LPUART1_BASE)
+#endif
 
 /** Receive data register (USART_RDR) */
 #define USART_RDR(usart_base)		MMIO32((usart_base) + 0x24)
@@ -178,6 +199,9 @@
 #if defined(UART5_BASE)
 #define UART5_RDR			USART_RDR(UART5_BASE)
 #endif
+#if defined(LPUART1_BASE)
+#define LPUART1_RDR                     USART_RDR(LPUART1_BASE)
+#endif
 
 /** Transmit data register (USART_TDR) */
 #define USART_TDR(usart_base)		MMIO32((usart_base) + 0x28)
@@ -192,6 +216,9 @@
 #endif
 #if defined(UART5_BASE)
 #define UART5_TDR			USART_TDR(UART5_BASE)
+#endif
+#if defined(LPUART1_BASE)
+#define LPUART1_TDR                     USART_TDR(LPUART1_BASE)
 #endif
 
 /**@}*/
